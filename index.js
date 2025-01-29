@@ -1,6 +1,6 @@
 
 const container = document.querySelector(".container");
-const griBtn = document.getElementById("grid");
+const gridBtn = document.getElementById("grid");
 const input = document.getElementById("input-grid");
 
 
@@ -48,8 +48,6 @@ const generateLetter = (array)=>{
 
 const randomColor = ()=>{
     const hex = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F"];
-
-   
     let color = "";
 
     for(let i = 0; i < 6; i++){
@@ -71,4 +69,4 @@ const changeColor = (e)=>{
 }
 document.addEventListener("DOMContentLoaded", createGrid);
 container.addEventListener("mouseover", changeColor);
-griBtn.addEventListener("click", createGrid);
+gridBtn.addEventListener("click", createGrid);
